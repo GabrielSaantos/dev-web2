@@ -573,7 +573,7 @@ header.dark {
 .loginForm .dark {
   background-color: #000000;
 }
-.text .dark {
+.text.dark {
   color: #ffffff;
 }
 
