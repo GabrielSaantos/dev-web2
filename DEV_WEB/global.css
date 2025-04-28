@@ -37,6 +37,10 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   padding: 0px 5px;
+  display: flex;
+  margin-left: 1950px;
+  list-style: none;
+  gap: 20px;
 }
 .navbarText {
   color: #000000;
@@ -146,7 +150,8 @@ a:hover {
   width: 640px;
   height: auto;
   margin-top: -460px;
-  margin-left: 820px;
+  margin-left: 1500px;
+  margin-bottom: 10px;
 }
 
 .cranioFlores {
@@ -568,39 +573,39 @@ header.dark {
 .loginForm .dark {
   background-color: #000000;
 }
+.text .dark {
+  color: #ffffff;
+}
 
 /*Página Cuide-se*/
-
-.cuide-seImgs {
+.container {
   display: flex;
-  width: 500px;
-  margin-left: 85%;
-  margin-top: 0px;
-}
-.Texts {
-  margin-left: 15px;
-  max-width: 50px;
-  margin-top: 0;
-}
-.textPageCuide-se {
-  display: inline-block;
-  color: #0e71b2;
-  width: 300px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+  font-weight: 600;
+  padding: 20px;
+  gap: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1070b4;
+  display: flex;
+  flex-direction: column;
+}
+
+.textCuide-se {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
   text-align: center;
-  margin: 20px;
-  flex-direction: column;
-}
-
-.infoText {
-  display: flex;
-  width: 300px;
   font-family: "Poppins", sans-serif;
-  font-style: normal;
-  margin: 20px;
-  flex-direction: column;
-  max-width: 50%;
-  margin-top: 0;
+  font-weight: 500;
+  display: inline-block;
 }
