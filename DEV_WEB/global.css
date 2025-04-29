@@ -102,6 +102,10 @@ a {
   margin-top: 270px;
   margin-left: 74px;
 }
+.title {
+  font-family: inherit;
+  font-weight: bold;
+}
 .h5 {
   text-align: center;
   color: #ffffff;
@@ -133,6 +137,10 @@ a {
 }
 
 /*Classes de Link*/
+a {
+  color: #000000;
+}
+
 a:hover {
   text-decoration: none;
   color: #000000;
@@ -154,14 +162,18 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.cranioFlores {
+.siluetaAzul {
   border-radius: 10px;
+  width: 300px;
 }
 .homemForte {
   border-radius: 10px;
+  width: 300px;
 }
 .mulherMeditando {
   border-radius: 10px;
+  display: flex;
+  width: 500px;
 }
 
 .imgTreino {
@@ -564,17 +576,24 @@ header.dark {
   background-color: #003eb1;
 }
 
-.logohome.dark {
-  background-color: floralwhite;
-  border-radius: 10px;
-  padding: 5px;
+.logoHome.dark {
+  filter: invert(1);
 }
 
-.loginForm .dark {
-  background-color: #000000;
-}
 .text.dark {
   color: #ffffff;
+}
+a.dark {
+  color: #ffffff;
+}
+.link:hover.dark {
+  text-decoration: none;
+  color: #ffffff;
+
+  font-weight: 400;
+  text-decoration: none;
+  justify-content: space-between;
+  transition: 0.3s;
 }
 
 /*Página Cuide-se*/

@@ -9,7 +9,7 @@ trilho.addEventListener("click", () => {
   trilho.classList.toggle("dark");
   body.classList.toggle("dark");
   header.classList.toggle("dark");
-  logoHome.classList.toggle("dark");
+  logo.classList.toggle("dark");
   text.classList.toggle("dark");
   footer.classList.toggle("dark");
 });
