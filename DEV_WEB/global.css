@@ -71,6 +71,7 @@ body {
   overflow: overlay;
   @apply bg-background text-text w-screen h-screen;
   margin: 5px 4px;
+  font-family: "Poppins", sans-serif;
 }
 
 .button {
@@ -124,16 +125,26 @@ a {
   font-weight: 800;
   font-style: normal;
 }
+
 .textdescubra {
-  font-family: Poppins, sans-serif;
-  margin-left: 48px;
-  margin-top: 130px;
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-top: 50px;
 }
 
 .descubramais {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.descubramais iframe {
+  max-width: 20%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*Classes de Link*/
@@ -201,15 +212,40 @@ a:hover {
 }
 
 .sobre {
-  margin-top: 120px;
-  margin-left: 34px;
-  margin-top: 40px;
-  font-family: "Poppins", sans-serif;
+  background: white;
+  margin: 50px 20px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  min-width: 280px;
 }
 
 .ft-sobre {
-  width: 500px;
-  margin-left: 900px;
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  min-width: 280px;
 }
 
 /*Pagina de Treinos*/
@@ -526,9 +562,9 @@ iframe {
 }
 .h10 {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 18px;
-  margin-top: 20px;
-  margin-left: 74px;
+  margin-bottom: 12px;
+  margin-top: 13px;
+  font-size: 12px;
 }
 
 /*Modo Dark*/
@@ -536,7 +572,7 @@ iframe {
   display: flex;
   width: 80px;
   height: 40px;
-  background-color: #000000;
+  background-color: #003eb1;
   margin-left: 180vh;
   border-radius: 150px;
   margin-top: 20px;
