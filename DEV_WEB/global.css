@@ -516,8 +516,12 @@ iframe {
 }
 @media screen and (max-width: 768px) {
   .cadastroForm {
+    width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .navbar {
+    display: none;
   }
 }
 
@@ -609,6 +613,7 @@ iframe {
   .loginForm {
     width: 100%;
     flex-direction: column;
+    margin-left: 10px;
   }
   .coraçaoLogin {
     display: none;
@@ -712,60 +717,44 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
-  .btnLogin,
-  .LogarText,
-  .loginForm,
-  .coraçaoLogin {
+  .CadastroNomeInput,
+  .CadastroEmailInput,
+  .senhaInputCadastro,
+  .btnCadastro {
     width: 100%;
     flex-direction: column;
   }
-  @media screen and (max-width: 768px) {
-    .loginEmailInput,
-    .senhaInputLogin,
-    .btnLogin {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .CadastroNomeInput,
-    .CadastroEmailInput,
-    .senhaInputCadastro,
-    .btnCadastro {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .CadastroText,
-    .btnLogin2 {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .h1,
-    .h2,
-    .h3,
-    .textos,
-    .conteiner-footer {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .header {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .btn-home {
-      width: 100%;
-      flex-direction: column;
-    }
+}
+@media screen and (max-width: 768px) {
+  .CadastroText,
+  .btnLogin2 {
+    width: 100%;
+    flex-direction: column;
   }
 }
+@media screen and (max-width: 768px) {
+  .h1,
+  .h2,
+  .h3,
+  .textos,
+  .conteiner-footer {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn-home {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 .h10 {
   font-family: "Poppins", sans-serif;
   margin-bottom: 12px;
