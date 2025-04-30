@@ -755,6 +755,17 @@ iframe {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .grid-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .grid-item {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 .h10 {
   font-family: "Poppins", sans-serif;
   margin-bottom: 12px;
@@ -808,7 +819,8 @@ iframe {
 
 /*Página Cuide-se*/
 .grid-container {
-  display: grid;
+  gap: 100px;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
@@ -816,6 +828,10 @@ iframe {
 }
 
 .grid-item {
+  display: block;
+  flex: 1;
+
+  flex-direction: space-between;
   background-color: white; /* Fundo branco para os itens da grade */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
