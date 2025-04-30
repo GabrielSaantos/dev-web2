@@ -20,7 +20,7 @@
 
   <img src="/DEV_WEB/assets/LOGOFITSTRENGTH.png" class="logohome" />
   <nav>
-    <ul class="navbar">
+    <ul class="navbar" id="mobile-menu">
       <li>
         <a
           rel="stylesheet"
@@ -39,8 +39,44 @@
           >Treinos</a
         >
       </li>
+
+      <li>
+        <a class="navbarText" href="/DEV_WEB/pages/cuide-se.html">Cuide-se</a>
+      </li>
+
+      <a
+        rel="stylesheet"
+        class="navbarText"
+        style="text-decoration: none"
+        href="/DEV_WEB/pages/login.html"
+        >Login</a
+      >
     </ul>
   </nav>
+
+  <div class="menu" id="menu">
+    <!-- Botão hamburger -->
+    <div
+      class="hamburger"
+      id="hamburger"
+      aria-label="Menu"
+      aria-expanded="false"
+      role="button"
+      tabindex="0"
+    >
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <!-- Itens do menu -->
+    <ul class="menu-items" id="menuItems">
+      <li><a href="/DEV_WEB/pages/index.html">Home</a></li>
+      <li><a href="/DEV_WEB/pages/treinos.html">Treinos</a></li>
+      <li><a href="/DEV_WEB/pages/login.html">Login</a></li>
+      <li><a href="/DEV_WEB/pages/cuide-se.html">Cuide-se</a></li>
+    </ul>
+  </div>
+
   <body>
     <header class="header"></header>
 
@@ -65,6 +101,7 @@
     <img src="/DEV_WEB/assets/coracaoHOME.png" class="coraçaoHOME" />
 
     <h1 class="textdescubra">Fique por dentro!</h1>
+
     <section class="descubramais">
       <iframe
         src="https://www.youtube.com/embed/scWI-ykd94w"
@@ -86,19 +123,28 @@
     <div class="sobre">
       <h1>Sobre o nosso Projeto!</h1>
       <p>
-        Efetue os exercícios de maneira descomplicada! Oferecemos opções de
-        treino variados. Os treinos são uma parte fundamental para manter a
-        saúde e o bem-estar. Eles podem variar de acordo com os objetivos de
-        cada pessoa, como ganhar força, aumentar a resistência, perder peso ou
-        melhorar a flexibilidade. Além disso, a prática regular de exercícios
-        físicos pode ajudar a liberar endorfinas, que são hormônios que promovem
-        a sensação de felicidade e bem-estar.
+        Fitness Strength Mais do que um treino, um estilo de vida! Está nascendo
+        um novo espaço onde a força vai além dos músculos um lugar pensado para
+        transformar vidas por meio do movimento, da superação e do cuidado com o
+        corpo e a mente. A Fitness Strength está em processo de fundação com uma
+        proposta clara: ser referência em saúde, bem-estar e motivação para
+        todos que buscam mais qualidade de vida. Em um mundo cada vez mais
+        acelerado, a atividade física deixou de ser apenas uma opção estética
+        ela se tornou uma necessidade. Mexer o corpo é prevenir doenças,
+        aumentar a disposição, aliviar o estresse e fortalecer a autoestima. E é
+        exatamente isso que queremos proporcionar: uma academia acessível,
+        moderna e acolhedora, onde cada aluno se sinta valorizado e impulsionado
+        a dar o seu melhor. Na Fitness Strength, cada passo será acompanhado com
+        responsabilidade, conhecimento e paixão. Porque acreditamos que cuidar
+        da saúde é o investimento mais importante que alguém pode fazer. E
+        queremos estar ao seu lado nessa jornada
       </p>
       <img src="/assets/imagemHOME.png" class="ft-sobre" />
     </div>
 
     <script src="/DEV_WEB/scripts/scripts.js"></script>
   </body>
+
   <footer class="conteiner-footer">
     <h5 class="h5">Todos os direitos reservados a FITNESS STRENGTH</h5>
   </footer>

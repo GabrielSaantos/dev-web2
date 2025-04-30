@@ -26,10 +26,11 @@
   border-radius: 10px;
 }
 .logohome {
-  width: 130px;
+  max-width: 350px;
   height: auto;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 35px;
+  margin-bottom: -40px;
 }
 .navbar {
   text-align: center;
@@ -87,7 +88,7 @@ a {
 /*Classes de texto*/
 .h1 {
   padding-top: 40px;
-  font-size: 80px;
+  font-size: 100px;
   margin-left: 70px;
   margin-top: 95px;
   margin-bottom: -270px;
@@ -102,6 +103,7 @@ a {
   margin-bottom: 100px;
   margin-top: 270px;
   margin-left: 74px;
+  font-weight: 400;
 }
 .title {
   font-family: inherit;
@@ -165,11 +167,11 @@ a:hover {
 /*Fotos*/
 .coraçaoHOME {
   display: flex;
-  max-width: 100%;
+  max-width: 80%;
   width: 640px;
   height: auto;
-  margin-top: -460px;
-  margin-left: 1500px;
+  margin-top: -495px;
+  margin-left: 1200px;
   margin-bottom: 10px;
 }
 
@@ -228,7 +230,7 @@ a:hover {
   width: 100%;
   text-align: center;
   font-size: 2rem;
-  color: #ff6b6b;
+  color: #0e71b2;
   margin-bottom: 20px;
 }
 
@@ -250,34 +252,50 @@ a:hover {
 
 /*Pagina de Treinos*/
 
-.conteiner {
+.container {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+  gap: 20px; /* Espaçamento entre os itens */
 }
 
 .treinos {
+  flex: 1; /* Permite que as seções ocupem espaço igual */
+  min-width: 250px; /* Largura mínima para garantir legibilidade */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  justify-items: baseline;
+  justify-content: flex-start; /* Alinha os itens no início */
+  background-color: #f9f9f9; /* Fundo claro para as seções de treino */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.treinos2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  justify-items: flex-end;
+.title {
+  font-size: 24px;
+  color: #1070b4;
+  margin-bottom: 15px;
 }
 
-.treinos3 {
+.link {
+  text-decoration: none;
+  color: #1070b4;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.imgTreino {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  justify-items: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.imgTreino img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 iframe {
@@ -408,13 +426,12 @@ iframe {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   max-width: 400px;
-  border: 1px solid #ccc;
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  background-color: gradient(to right, #0e71b2, #0056f5);
-  background-image: linear-gradient(to right, #0e71b2, #0051ff);
+  background-color: gradient(to right, #1070b4, #1070b4);
+  background-image: linear-gradient(to right, #1070b4, #1070b4);
   border-radius: 10px;
   margin-bottom: 100px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -514,6 +531,61 @@ iframe {
     flex-direction: column;
   }
 }
+/* Container do menu */
+.menu {
+  position: relative;
+}
+
+/* Estilo do botão hamburger */
+.hamburger {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Linhas do hamburger */
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Menu oculto por padrão */
+.menu-items {
+  margin-left: 50px;
+  display: none;
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Mostrar menu quando ativo */
+.menu-active .menu-items {
+  display: block;
+}
+
+/* Estilo dos itens do menu */
+.menu-items li {
+  padding: 10px 0;
+}
+
+/* Opcional: efeito de transformação no hamburger ao clicar */
+.menu-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
 
 @media screen and (max-width: 768px) {
   .marombafoto {
@@ -535,19 +607,66 @@ iframe {
   }
 }
 @media screen and (max-width: 768px) {
-  .h1,
-  .h2,
-  .h3,
-  .textos,
-  .conteiner-footer {
+  @media screen and (max-width: 768px) {
+    .mulherMeditando {
+      width: 100%;
+      flex-direction: column;
+    }
+    .homemForte {
+      width: 100%;
+      flex-direction: column;
+    }
+    .siluetaAzul {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768) {
+    .navbar {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header,
+  .trilho,
+  .indicador {
     width: 100%;
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .header {
+  .navbarText {
     width: 100%;
     flex-direction: column;
+  }
+}
+.mobile-menu {
+  display: none;
+}
+.hamburger,
+.close {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #1070b4;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar_treinos {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
   }
 }
 
@@ -558,6 +677,52 @@ iframe {
   .coraçaoLogin {
     width: 100%;
     flex-direction: column;
+  }
+  @media screen and (max-width: 768px) {
+    .loginEmailInput,
+    .senhaInputLogin,
+    .btnLogin {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .CadastroNomeInput,
+    .CadastroEmailInput,
+    .senhaInputCadastro,
+    .btnCadastro {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .CadastroText,
+    .btnLogin2 {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .h1,
+    .h2,
+    .h3,
+    .textos,
+    .conteiner-footer {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .header {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .btn-home {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 }
 .h10 {
@@ -572,7 +737,7 @@ iframe {
   display: flex;
   width: 80px;
   height: 40px;
-  background-color: #003eb1;
+  background-color: #1070b4;
   margin-left: 180vh;
   border-radius: 150px;
   margin-top: 20px;
@@ -633,34 +798,31 @@ a.dark {
 }
 
 /*Página Cuide-se*/
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  padding: 20px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: white; /* Fundo branco para os itens da grade */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espaçamento interno dos itens */
+  transition: transform 0.3s; /* Transição suave para hover */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
 }
 
 .title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #1070b4;
-  display: flex;
-  flex-direction: column;
+  font-size: 24px; /* Tamanho do título */
+  color: #1070b4; /* Cor do título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
 
 .textCuide-se {
-  font-size: 16px;
-  color: #000000;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  display: inline-block;
+  font-size: 16px; /* Tamanho do texto */
 }

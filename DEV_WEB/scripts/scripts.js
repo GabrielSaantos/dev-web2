@@ -13,3 +13,22 @@ trilho.addEventListener("click", () => {
   text.classList.toggle("dark");
   footer.classList.toggle("dark");
 });
+
+// Função para alternar o menu
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("menu-active");
+  // Alternar o estado do aria-expanded
+  const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
+  hamburger.setAttribute("aria-expanded", String(!expanded));
+});
+
+// Opcional: permitir abrir o menu com Enter ou Espaço
+hamburger.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    hamburger.click();
+  }
+});
