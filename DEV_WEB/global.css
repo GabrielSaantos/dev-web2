@@ -25,13 +25,7 @@
 
   border-radius: 10px;
 }
-.logohome {
-  max-width: 350px;
-  height: auto;
-  margin-left: 50px;
-  margin-top: 35px;
-  margin-bottom: -40px;
-}
+
 .navbar {
   text-align: center;
   text-decoration: none;
@@ -601,6 +595,25 @@ iframe {
   }
 }
 @media screen and (max-width: 768px) {
+  .coraçaoHOME {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imgTreino {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .treinos {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .sobre {
     width: 100%;
     flex-direction: column;
@@ -633,7 +646,9 @@ iframe {
   .trilho,
   .indicador {
     width: 100%;
+    display: flex;
     flex-direction: column;
+    max-width: 100%;
   }
 }
 
@@ -731,6 +746,15 @@ iframe {
   margin-top: 13px;
   font-size: 12px;
 }
+@media screen and(max-width: 768px) {
+  .trilho {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .indicador {
+    left: 0;
+  }
+}
 
 /*Modo Dark*/
 .trilho {
@@ -738,13 +762,14 @@ iframe {
   width: 80px;
   height: 40px;
   background-color: #1070b4;
-  margin-left: 180vh;
+  margin-left: 10vh;
   border-radius: 150px;
   margin-top: 20px;
   position: relative;
 
   cursor: pointer;
 }
+
 .trilho .indicador {
   width: 38px;
   height: 38px;
@@ -797,12 +822,49 @@ a.dark {
   transition: 0.3s;
 }
 
+.logo-branca {
+  display: none;
+  max-width: 350px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 35px;
+  margin-bottom: -40px;
+}
+.logo-escura {
+  display: none;
+  max-width: 350px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 35px;
+  margin-bottom: -40px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-branca {
+    display: flex;
+    max-width: 350px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+  }
+  .logo-escura {
+    display: block;
+    max-width: 350px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+  }
+}
+
 /*Página Cuide-se*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
+  flex-direction: space-between;
 }
 
 .grid-item {
