@@ -502,6 +502,18 @@ iframe {
 }
 
 /*Responsividade*/
+
+@media screen and (max-width: 768px) {
+  .descubramais {
+    width: 100%;
+    flex-direction: column;
+  }
+  .descubramais iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .cadastroForm {
     display: flex;
@@ -587,6 +599,21 @@ iframe {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 768px) {
+  .cadastroForm {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .loginForm {
+    width: 100%;
+    flex-direction: column;
+  }
+  .coraçaoLogin {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .btn-home {
@@ -596,8 +623,7 @@ iframe {
 }
 @media screen and (max-width: 768px) {
   .coraçaoHOME {
-    width: 100%;
-    flex-direction: column;
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -746,72 +772,7 @@ iframe {
   margin-top: 13px;
   font-size: 12px;
 }
-@media screen and(max-width: 768px) {
-  .trilho {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-  .indicador {
-    left: 0;
-  }
-}
 
-/*Modo Dark*/
-.trilho {
-  display: flex;
-  width: 80px;
-  height: 40px;
-  background-color: #1070b4;
-  margin-left: 10vh;
-  border-radius: 150px;
-  margin-top: 20px;
-  position: relative;
-
-  cursor: pointer;
-}
-
-.trilho .indicador {
-  width: 38px;
-  height: 38px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  transform: scale(0.9);
-  position: absolute;
-  left: 0;
-  transition: 0.5s;
-}
-
-.trilho.dark {
-  background-color: #c3c3c3;
-}
-
-.trilho.dark .indicador {
-  left: 42px;
-  background-color: grey;
-}
-
-body.dark {
-  background-color: #232323;
-}
-
-header.dark {
-  background-color: #003eb1;
-}
-
-.conteiner-footer.dark {
-  background-color: #003eb1;
-}
-
-.logoHome.dark {
-  filter: invert(1);
-}
-
-.text.dark {
-  color: #ffffff;
-}
-a.dark {
-  color: #ffffff;
-}
 .link:hover.dark {
   text-decoration: none;
   color: #ffffff;
@@ -839,23 +800,21 @@ a.dark {
   margin-bottom: -40px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo-branca {
-    display: flex;
-    max-width: 350px;
-    height: auto;
-    margin-left: 50px;
-    margin-top: 40px;
-    margin-bottom: -40px;
-  }
-  .logo-escura {
-    display: block;
-    max-width: 350px;
-    height: auto;
-    margin-left: 50px;
-    margin-top: 40px;
-    margin-bottom: -40px;
-  }
+.logo-branca {
+  display: flex;
+  max-width: 350px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-bottom: -40px;
+}
+.logo-escura {
+  display: block;
+  max-width: 350px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-bottom: -40px;
 }
 
 /*Página Cuide-se*/
